@@ -23,9 +23,9 @@ def process_image_for_ocr(image_path, reader):
         print(f"OCR error: {str(e)}")
         return None, [], []
 
-def draw_bounding_boxes(image, boxes):
-    """Draw bounding boxes on the image"""
-    annotated_image = image.copy()
-    for box in boxes:
-        cv2.polylines(annotated_image, [box], True, (0, 255, 0), 2)
-    return annotated_image
+# def draw_bounding_boxes(image, boxes):
+#     """Draw bounding boxes on the image"""
+#     annotated_image = image.copy()
+#     for box in boxes:
+#         cv2.polylines(annotated_image, [box], True, (0, 255, 0), 2)
+#     return annotated_image
